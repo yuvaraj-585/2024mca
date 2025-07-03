@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var n1,n2,sum;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            sum=n1+n2;
+            document.getElementById("textanswer").value=sum;
+        }
+        function sub(){
+            var n1,n2,sub;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            sub=n1-n2;
+            document.getElementById("textanswer").value=sub;
+
+        }
+        function mul(){
+            var n1,n2,mul;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            mul=n1*n2;
+            document.getElementById("textanswer").value=mul;
+        }
+        function div(){
+            var n1,n2,div;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            div=n1/n2;
+            document.getElementById("textanswer").value=div;
+        }
+        function clears(){
+            document.getElementById("textfirstnumber").value = "";
+            document.getElementById("textsecondnumber").value = "";
+            document.getElementById("textanswer").value = "";
+
+        }
+        
+        
+        
+
+    </script>
+    <style>
+        .mm{
+            margin-left: 30%;
+        }
+        h1{
+            margin-left: 30%;
+        }
+        h1{
+            border-radius: 30%;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="mm">
+        <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>seconNumber:<input id="textsecondnumber"></p>
+    <button onclick="add()">addition</button>
+  
+    <button onclick="sub()">sub</button>
+    
+    <button onclick="mul()">mul</button>
+   
+    <button onclick="div()">div</button>
+    <button onclick="clears()">clear</button>
+    <p>sum=<input id="textanswer"></p>
+    </div>
+    
+    
+    
+</body>
+</html>

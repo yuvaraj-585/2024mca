@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sub(){
+            var n1,n2,sub;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            sub=n1-n2;
+            document.getElementById("textanswer").value=sub;
+        }
+    </script>
+</head>
+<body>
+    <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>secondNumber:<input id="textsecondnumber"></p>
+    <button onclick="sub()">sub</button>
+    <p>Sub=<input id="textanswer"></p>
+    
+</body>
+</html>

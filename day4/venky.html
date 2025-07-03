@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var n1,n2,sum;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            sum=n1+n2;
+            document.getElementById("textanswer").value=sum;
+        }
+        function sub(){
+            var n1,n2,sub;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            sub=n1-n2;
+            document.getElementById("textanswer").value=sub;
+        function sub(){
+            var n1,n2,mul;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            mul=n1*n2;
+            document.getElementById("textanswer").value=mul;
+        }
+        function div(){
+            var n1,n2,div;
+            n1=parseInt(document.getElementById("textfirstnumber").value);
+            n2=parseInt(document.getElementById("textsecondnumber").value);
+            div=n1/n2;
+            document.getElementById("textanswer").value=div;
+        }
+        
+        
+
+    </script>
+</head>
+<body>
+    <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>seconNumber:<input id="textsecondnumber"></p>
+    <button onclick="add()">addition</button>
+    <p>Sum=<input id="textanswer"></p>
+    <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>seconNumber:<input id="textsecondnumber"></p>
+    <button onclick="sub()">sub</button>
+    <p>Sub=<input id="textanswer"></p>
+    <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>seconNumber:<input id="textsecondnumber"></p>
+    <button onclick="mul()">mul</button>
+    <p>mul=<input id="textanswer"></p>
+    <p>firstNumber:<input id="textfirstnumber"></p>
+    <p>seconNumber:<input id="textsecondnumber"></p>
+    <button onclick="div()">div</button>
+    <p>div=<input id="textanswer"></p>
+    
+    
+    
+</body>
+</html>

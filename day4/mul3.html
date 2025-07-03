@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function largestdigit(){
+            var num=parseInt(document.getElementById("txtnumber").value);
+            ld=0;
+            while(num>0){
+                rem=num%10;
+                if(rem>ld) ld=rem;
+                num =Math.floor(num/10);
+            }
+            document.getElementById("txtans").value=ld;
+
+            }
+    </script>
+</head>
+<body>
+    <p>
+        enter a number:<input id="txtnumber">
+
+    </p>
+    <button onclick="sumofdigit()">sumofdigit</button>
+    <button onclick="smallestdigit()">smallestdigit</button>
+    <button onclick="largestdigit()">largestdigit</button>
+    <button onclick="reversetdigit()">reversedigit</button>
+    <p>sumofdigit: <input id="txtans"></p>
+
+    
+</body>
+</html>
