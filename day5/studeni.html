@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="fac.js"></script>
+    <title>Student details</title>
+    <style>
+      body {
+            background-color:rgb(0, 0, 255);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+         /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: rgb(159, 51, 105);
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px 15px;
+            box-shadow: 1px 3px 5px rgba(42, 58, 100, 0.5);
+        }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault();onFormSubmit();">
+            <h2>Enter Student details</h2>
+            <div>
+              <label for="Student name">Name</label><br />
+              <input
+                type="text"
+                class="facName"
+                id="facName"
+                placeholder="Enter the student Name"
+              />
+            </div>
+            <div>
+              <label for="Department">Dpartment</label><br />
+              <input
+                type="text"
+                class="facDep"
+                id="facDep"
+                placeholder="Enter the Student Department"
+              />
+            </div>
+            <div>
+              <label for="subject">Subject</label><br />
+              <input
+                type="text"
+                class="facSub"
+                id="facSub"
+                placeholder="Enter the subject name"
+              />
+            </div>
+            <div>
+              <label for="Age">Age</label><br />
+              <input
+                type="number"
+                class="facAge"
+                id="facAge"
+                placeholder="Enter a Age "
+              />
+            </div>
+            <div>
+              <label for="Place">Place</label><br />
+              <input
+                type="text"
+                class="facPlace"
+                id="facPlace"
+                placeholder="Enter the adress of a Student"
+              />
+            </div>
+            <div>
+              <input type="submit" value="submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table
+            class="list"
+            id="faclist"
+            style="background-color: darkgoldenrod"
+          >
+            <thead>
+              <td>Name</td>
+              <td>Department</td>
+              <td>Subject</td>
+              <td>Age</td>
+              <td>Place</td>
+              <td>Action</td>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

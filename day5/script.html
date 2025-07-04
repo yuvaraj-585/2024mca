@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript html dom</h2>
+    <p>finding the html elements using<b>document.form</b></p>
+    <h2>form1</h2>
+    <form id="frm1" action="">
+        first name:<input type="text" name="fname"value="ravi"><br/>
+        second name:<input type="text" name="sname"value="yuva"><br/>
+        last name:<input type="text" name="lname"
+        value="kumar"><br><br>
+        <input type="submit" value="submit"><br/>
+        <h2>form2</h2>
+        <form id="frm2" action="">
+        first name:<input type="text" name="fname"value="riya"><br/>
+        second name:<input type="text" name="sname"value="venky"><br/>
+        last name:<input type="text" name="lname"
+        value="yash"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p> there are value of each element in the form</p>
+    <p id="demo"></p>
+    <script>
+        const x=document.forms["frm1"];
+        let text="";
+        for(let i=0;i<x.length; i++){
+            text+=x.elements[i].value+"<br>";
+        }
+        document.getElementById("demo").innerHTML=text;
+
+    </script>
+    
+</body>
+</html>

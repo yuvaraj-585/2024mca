@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: header;
+  background-color: rgb(0, 128, 0);
+  text-align: center;
+  color: #ffffff;
+}
+
+.item1 > h1 {
+  font-size: 40px;
+}
+
+.item2 {
+  grid-area: menu;
+  }
+  
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item2 li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #1f1243;
+  color: #ffffff;
+}
+
+.item2 li:hover {
+  background-color: #1f3e3a;
+}
+  
+.item3 {
+  grid-area: main;
+}
+
+.item3 > h1 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+
+.item3 > p {
+  margin-bottom: 7px;
+}
+
+.item4 {
+  grid-area: right;
+  border: 2px solid #0099cc;
+  background-color: white;
+  padding: 15px;
+  color: #000000;
+}
+
+.item4 > h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.item4 li {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.item5 {
+  grid-area: footer;
+  background-color: #39181d;
+  color: #ffffff;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><h1>Mother theresa college</h1></div>
+
+  <div class="item2">
+    <ul>
+      <li>COLLEGE BLOCKs</li>
+      <li>MCA</li>
+      <li>MBA</li>
+      <li>B-TECH</li>
+      <li>DEGREE</li>
+      <li>INTER</li>
+    </ul>
+</div>
+
+  <div class="item3">
+    <h1>The college</h1>
+    <p>mother theresa college famous in palamaner top 1 college in education.</p>
+    <p>there are lot of student studied their college . </p>
+    <p>there are several types of branches i that college.</p>
+  </div>  
+
+  <div class="item4">
+    <h2>Facts:</h2>
+    <ul>
+      <li>college is famous of quality of education.</li>
+      <li>so many villages to come study in their college.</li>
+      <li>Library so good.</li>
+      <li> good infrastructure</li>
+      <p>Best faculty in their college</p>
+    </ul>
+  </div>
+
+  <div class="item5"><p>Resize the browser window to see how the content respond to the resizing.</p></div>
+  
+</div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
