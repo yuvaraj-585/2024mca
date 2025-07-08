@@ -6,3 +6,7 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+def yuvaraj(request):
+    return render(request, 'yuvaraj.html')
+def prasad(request):
+    return render(request, 'prasad.html')
