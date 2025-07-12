@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Canteen items</title>
+    <style>
+        img { max-width: 150px; }
+        .item { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; }
+    </style>
+</head>
+<body bgcolor="skyblue">
+    <h1>items</h1>
+    {% for item in items %}
+        <div class="item">
+            {% if item.image %}
+                <img src="{{ item.image.url }}" alt="{{ item.name }}">
+            {% endif %}
+            <h2><a href="{% url 'item_detail' item.pk %}">{{ item.name }}</a></h2>
+            <p>${{ item.price }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
