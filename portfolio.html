@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yuvaraju | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right top, #dfe9f3, #ffffff);
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 15px 30px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: 500;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #003366;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #0066cc;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+	  nav{
+	  bgcolor:red;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="glass" id="home">
+      <img src="men.jpeg" alt="Yuvaraju" class="profile-pic" />
+      <h1>Yuvaraju</h1>
+      <p>Pursuing MCA at Mother Theresa Institute | Full Stack Learner | Tech Enthusiast</p>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="glass" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Yuvaraju, currently pursuing my Master of Computer Applications (MCA) from Mother Theresa Institute. I'm passionate about full stack web development, modern UI/UX design, and emerging technologies like AI and Cloud Computing. I enjoy turning ideas into functional, user-friendly software.
+      </p>
+    </section>
+
+    <!-- Video Resume Section -->
+    <section class="glass" id="resume">
+      <h2>Video Resume</h2>
+      <video controls>
+        <source src="your-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="glass">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Online Shopping Site:</strong> PHP, MySQL, Bootstrap</li>
+        <li><strong>Weather App:</strong> JavaScript + OpenWeather API</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="glass" id="contact">
+      <h2>Contact</h2>
+      <p>Email: yuvaraju@example.com</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yuvaraju</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Yuvaraju. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
